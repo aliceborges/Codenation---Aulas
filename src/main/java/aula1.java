@@ -147,30 +147,30 @@ public class aula1 {
 //        }
 
 //                --------------------------------------------------
-//        System.out.println("SALÁRIO \n");
-//
-//        DecimalFormat decimalFormat = new DecimalFormat("#,##0.00");
-//        decimalFormat.setRoundingMode(RoundingMode.DOWN);
-//        Scanner input = new Scanner(System.in);
-//        float salario;
-//        double desconto, salarioComDesconto;
-//
-//        while (true) {
-//            System.out.print("Informe seu salário: R$");
-//            salario = input.nextFloat();
-//
-//            if (salario < 1700) {
-//                desconto = salario * 0.08;
-//                salarioComDesconto = salario - desconto;
-//            } else if (salario < 3000) {
-//                desconto = salario * 0.09;
-//                salarioComDesconto = salario - desconto;
-//            }else {
-//                desconto = salario * 0.11;
-//                salarioComDesconto = salario - desconto;
-//            }
-//
-//            System.out.println("Desconto: " + desconto + ". Seu salário com desconto fica em R$" + decimalFormat.format(salarioComDesconto) + "\n");
-//        }
+        System.out.println("SALÁRIO \n");
+
+        DecimalFormat decimalFormat = new DecimalFormat("#,##0.00");
+        decimalFormat.setRoundingMode(RoundingMode.DOWN);
+        Scanner input = new Scanner(System.in);
+        float salario;
+        double desconto, salarioComDesconto;
+
+        while (true) {
+            System.out.print("Informe seu salário: R$");
+            salario = input.nextFloat();
+
+            if (salario < 1700) {
+                desconto = salario * 0.08;
+                salarioComDesconto = salario - desconto;
+            } else if (salario < 3000) {
+                desconto = salario * 0.09;
+                salarioComDesconto = salario - desconto;
+            }else {
+                desconto = salario * 0.11;
+                salarioComDesconto = salario - desconto;
+            }
+
+            System.out.println("Desconto: " + desconto + ". Seu salário com desconto fica em R$" + decimalFormat.format(salarioComDesconto) + "\n");
+        }
     }
 }
